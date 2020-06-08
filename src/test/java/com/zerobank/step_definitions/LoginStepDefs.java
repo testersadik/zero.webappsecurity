@@ -26,6 +26,7 @@ public class LoginStepDefs {
     @When("The user enters a following invalid {string} and {string}")
     public void the_user_enters_a_following_invalid_and(String username, String password) {
          page.loginPage().loginAs(username,password);
+
     }
     @Then("Error message {string} should be displayed")
     public void error_message_should_be_displayed(String errorMessageText) {

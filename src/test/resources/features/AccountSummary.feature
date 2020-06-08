@@ -1,14 +1,15 @@
-@wip
+
   Feature: Account Summary
-    Background: the user is logged in
+    Background:
+      Given the user is logged in
     Scenario: The user should  be able see the Account summary page which has information about account summary
-      Then The title contains "Zero – Account summary".
-      Then  Account summary page should have to following account types:
+      Then The title contains "Zero - Account Summary"
+      And  Account summary page should have following account types:
       |Cash Accounts      |
       |Investment Accounts|
-      |Loan Accounts      |
       |Credit Accounts    |
-      Then Credit Accounts table must have columns Account, Credit Card and Balance.
+      |Loan Accounts      |
+      And Credit Accounts table must have following columns
       |Account     |
       |Credit Card |
       |Balance     |
