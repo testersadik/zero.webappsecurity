@@ -1,4 +1,4 @@
-
+@ZB_002 @account_summary
   Feature: Account Summary
     Background:
       Given the user is logged in

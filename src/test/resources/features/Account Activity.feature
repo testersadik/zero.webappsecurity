@@ -1,4 +1,4 @@
-
+@ZB_003 @account_activity
 Feature: Account Activity
   Background:
     Given the user is logged in

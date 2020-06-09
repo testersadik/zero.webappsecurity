@@ -28,10 +28,11 @@ public class LoginStepDefs {
          page.loginPage().loginAs(username,password);
 
     }
-    @Then("Error message {string} should be displayed")
-    public void error_message_should_be_displayed(String errorMessageText) {
-        Assert.assertTrue(page.loginPage().errorMessage.isDisplayed());
-        Assert.assertTrue(page.loginPage().errorMessage.getText().contains(errorMessageText));
-    }
+//    @Then("Error message {string} should be displayed")
+//    public void error_message_should_be_displayed(String errorMessageText) {
+//        Assert.assertTrue(page.loginPage().errorMessage.isDisplayed());
+//        Assert.assertTrue(page.loginPage().errorMessage.getText().contains(errorMessageText));
+//        page.dashboardPage().verifyElementDisplayedByLocatingText(errorMessageText);
+//    }
 
 }
